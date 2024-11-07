@@ -1,6 +1,6 @@
 # HubSpot Simple Sync
 
-A zero-bullshit SDK that makes HubSpot feel like a modern API. Think Stripe-level DX, but for CRM operations.
+A zero-bullshit SDK that makes HubSpot feel like a modern API. 
 
 ## Installation
 
