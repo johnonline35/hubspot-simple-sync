@@ -1,5 +1,5 @@
 import { config } from "dotenv";
-import { HubspotClient, ScrapedCompany } from "../HubspotClient";
+import { HubspotClient, Company } from "../HubspotClient";
 
 config();
 
@@ -15,7 +15,7 @@ const main = async () => {
   const hubspot = new HubspotClient(process.env.HUBSPOT_API_KEY);
 
   // Example data structure - replace with your actual scraper output
-  const scrapedData: ScrapedCompany[] = [
+  const Data: Company[] = [
     {
       companyDomain: "example.com",
       companyName: "Example Corp",
@@ -34,9 +34,9 @@ const main = async () => {
     console.log("Starting data processing...");
 
     const { results, errors, totalProcessed } = await hubspot.batch.process<
-      ScrapedCompany,
+      Company,
       ProcessedResult
-    >(scrapedData, async (data) => {
+    >(Data, async (data) => {
       console.log(`Processing company: ${data.companyDomain}`);
 
       const company = await hubspot.companies.upsert({
