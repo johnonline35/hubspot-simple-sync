@@ -1,7 +1,7 @@
 {
   "name": "hubspot-simple-sync",
-  "version": "1.0.0",
-  "description": "An almost zero-bullshit SDK that makes HubSpot feel like a modern API",
+  "version": "1.0.1",
+  "description": "A zero-bullshit SDK that makes HubSpot feel like a modern API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

@@ -5,13 +5,13 @@ import {
 } from "@hubspot/api-client/lib/codegen/crm/companies";
 import { AssociationSpecAssociationCategoryEnum } from "@hubspot/api-client/lib/codegen/crm/associations/v4/models/AssociationSpec";
 
-export interface ScrapedCompany {
+export interface Company {
   companyDomain: string;
   companyName: string;
-  contacts: ScrapedContact[];
+  contacts: Contact[];
 }
 
-export interface ScrapedContact {
+export interface Contact {
   email: string;
   firstName: string;
   lastName: string;
